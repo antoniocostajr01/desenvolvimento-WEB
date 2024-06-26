@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulários HTML</title>
+	<style type="text/css">
+		input{
+			display: block;
+			margin-bottom: 10px;
+		}
+		.check input{
+			display: inline-block;
+		}
+		.check label{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<h1>Trabalhando com Formulários</h1>
+<form method="post" action="">
+
+	<input type="hidden" name="oculto" value="5">
+
+	<label for="nome">Nome Completo:</label>
+	<input id="nome" type="text" name="nome" placeholder="Seu Nome" required >
+
+	<label for="email">Seu E-mail:</label>
+	<input id="email" type="email" name="email" placeholder="Seu E-mail" required>
+
+	<input type="number" name="idade" placeholder="Sua idade" max="10" min="3">
+
+	<input type="password" name="senha" placeholder="Crie uma senha">
+
+	<input type="url" name="site" placeholder="Seu site" >
+
+	<input type="file" name="arquivo">
+
+	<input type="tel" name="telefone" placeholder="Seu telefone">
+
+	<input type="search" name="busca" placeholder="Buscar">
+
+	<input type="color" name="cor">
+
+	<input type="range" name="escala" max="3">
+
+	<div class="check">
+		<label>
+			<input type="checkbox" name="html">HTML
+		</label>
+		<label>
+			<input type="checkbox" name="css">CSS
+		</label>
+		<label>
+			<input type="checkbox" name="php">PHP
+		</label>
+	</div>
+	<div class="check">
+		<h3>Informe seu genêro</h3>
+		<label>
+			<input type="radio" name="genero" value="M" checked> Masculino <!--checked ja vem marcado-->
+		</label>
+		<label>
+			<input type="radio" name="genero" value="F"> Feminino
+		</label>
+	</div>
+
+	<!--Datas e períodos-->
+	<input type="date" name="data">
+	<input type="time" name="Hora">
+	<input type="datetime-local" name="data-hora">
+	<input type="month" name="mes">
+	<input type="week" name="semana">
+
+	<!-- Botões --> 
+	<input type="image" name="bt-image" src="botao.png" >
+	<input type="reset" name="limpar" value="Apagar campos">
+	<input type="submit" name="enviar" value="Cadastrar">
+	<button>Enviar seus dados</button>
+
+
+
+		
+</form>
+
+</body>
+</html>
